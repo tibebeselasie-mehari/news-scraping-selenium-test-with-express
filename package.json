@@ -1,0 +1,22 @@
+{
+  "name": "amh-nes",
+  "version": "1.0.0",
+  "description": "Amharic news fetcher from reporter news",
+  "main": "app.js",
+  "dependencies": {
+    "express": "*",
+    "ejs": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "news",
+    "amharic",
+    "reporter",
+    "scrapping"
+  ],
+  "author": "Tibebeselasie Mehari",
+  "license": "ISC"
+}

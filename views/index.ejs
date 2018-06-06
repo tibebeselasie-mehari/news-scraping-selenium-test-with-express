@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .news{
+            background-color: #dddddd;
+            margin: 25px;
+            padding: 10px;
+            border: 2px solid #cfcfcf;
+        }
+
+        .news .header{
+            font-size: 24px;
+            background-color: #cccccc;
+            padding: 10px;
+        }
+
+        .news .description, .news .date{
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>News</h1>
+    <% for(let i=0; i < news.length; i++) {%>
+    <div class="news">
+        <div class="header"><%= news[i].category %></div>
+        <div class="date"><%= news[i].date %></div>
+        <div class="description"><%= news[i].description %></div>
+    </div>
+    <% } %>
+</body>
+</html>
